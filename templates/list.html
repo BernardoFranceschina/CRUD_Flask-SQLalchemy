@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista</title>
+</head>
+<body>
+    <h2>Lista de pessoas</h2>
+    <hr>
+    <table border="2">
+        <tr>
+            <td>id</td>
+            <td>Nome</td>
+            <td>Email</td>
+            <td>Senha</td>
+            <td>Excluir</td>
+            <td>Atualizar</td>
+            <td>Enviar email</td>
+        </tr>
+        {% for pessoa in pessoas %}
+        <tr>
+            <td>{{ pessoa._id }}</td>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.email }}</td>
+            <td>{{ pessoa.senha }}</td>
+            <td><a href="/excluir/{{ pessoa._id }}"> X </a></td>
+            <td><a href="/update/{{ pessoa._id }}"> X </a></td>
+            <td><a href="/email/{{ pessoa._id }}"> X </a></td >
+
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('crud') }}">Voltar</a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+    <h2>Update</h2>
+
+    <form action="{{ url_for('update', id=pessoa._id) }}" method="POST">
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td><input value="{{ pessoa.nome }}" type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input  value="{{ pessoa.email }}" type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Senha</td>
+                <td><input value="{{ pessoa.senha }}" type="password" name="senha"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Update">
+    </form>
+
+</body>
+</html>

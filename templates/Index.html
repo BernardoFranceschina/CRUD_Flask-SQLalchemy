@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../static/css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <div class="navbar-fixed">
+        <nav class="blue lighten-1">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"><img src="../static/images/logo_topo.png" alt="Itá Thermas"
+                            style="width: 90px; height: 60px;"></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="">O Resort</a></li>
+                        <li><a href="">Pacotes</a></li>
+                        <li><a href="">Eventos</a></li>
+                        <li><a href="">Apartamentos</a></li>
+                        <li><a class="waves-effect waves-light btn yellow blue-text"
+                                style="border-radius: 12px;">Solicite
+                                seu orçamento</a></li>
+                    </ul>
+                </div>
+                <a href="#" data-target="slide-out" class="sidenav-trigger">Side nav</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider fullscreen">
+        <ul class="slides">
+            <li>
+                <img src="../static/images/thermas1.jpg">
+                <div class="caption left-align">
+                    <h3><span class="yellow-text">O destino</span> certo pra você e sua família♥</h3>
+                    <a href="">
+                        <h5 data-target="slide-out" class="yellow blue-text btn sidenav-trigger"
+                            style="border-radius: 12px;">Conheça o Resort</h5>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <img src="https://www.itathermas.com.br/storage/banners/114531202003045e5fbf0b22e91.jpeg">
+            </li>
+            <li>
+                <img src="https://www.itathermas.com.br/storage/banners/081147201912135df371f315924.jpeg">
+            </li>
+        </ul>
+    </div>
+
+    <!-- SideNav -->
+    <ul id="slide-out" class="sidenav center blue darken-2">
+        <li><a class="waves-effect waves-light btn yellow blue-text" style="border-radius: 12px;">Solicite
+                seu orçamento</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="">Gastronomia</a></li>
+        <li><a href="">Spa</a></li>
+        <li><a href="">Lazer</a></li>
+        <li><a href="">Recreação</a></li>
+        <li><a href="">Tour Virtual</a></li>
+        <li><a href="">Itá</a></li>
+        <li><a href="">Itá Experience</a></li>
+        <li><a href="">Acontece Aqui</a></li>
+        <li><a href="">Aqua Parque</a></li>
+        <li><a href="">Fale Conosco</a></li>
+        <li><a href="">Localização</a></li>
+        <li><a href="">Trabalhe conosco</a></li>
+
+    
+    </ul>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/materialize.min.js"></script>
+    <script>
+        $('.slider').slider();
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+    </script>
+
+</body>
+
+</html>
